@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mafia City</title>
+        <link rel="stylesheet" type="text/css" href="gameStyle.css">
+        <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Abel|Bellota+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Economica|Lobster+Two&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class='header'>Mafia City</div>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </div>   
+        <div class='container'>
+            <div class='messagesDiv'>
+                <ul id='messages'>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class='container2'>
+            <button id='leaveRoom'>Leave Room</button>
+            
+            <div class='subContainer2'>
+                <div id='gangMembers'>
+                    <div id="title">Gang Members:</div>
+                    <ul id='members'></ul>
+                </div>
+                <div id='scores'>
+                    <div id='title'>Score:</div>
+                    <ul id='memberScore'></ul>
+                </div>
+            </div>
+           
+        </div>
+        
+        <form id='form1'>
+            <div class='blocks'>
+                <div class='block1'> <input id='inp1' autocomplete="off" spellcheck="false" required placeholder="Type here"></input> </div>
+                <div class='block2'> <button type='submit' id='btn1'>send</button> </div>
+            </div>
+        </form>
+
+        <div id='overlay'></div>
+        <div id='startTimer'></div>
+        <canvas id="canvas"></canvas>
+        <div id='emo' class="emo"> <button id="emoji-button">&#9786;</button> </div>
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src='gameScript.js'></script> 
+        <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@2.12.1/dist/index.min.js"></script>
+       
+        
+    </body>
+</html>
